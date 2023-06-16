@@ -17,8 +17,8 @@ int main(void)
 	{
 		if (ch == 'q' || ch == 'e')
 		{
-			continue;
 			ch++;
+			continue;
 		}
 		putchar(ch);
 		ch++;
