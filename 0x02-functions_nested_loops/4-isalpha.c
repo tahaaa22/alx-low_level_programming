@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * isalpha - checks for alphabetic characters onlu
+ * _isalpha - checks for alphabetic characters onlu
  *
  * @c: character to be checked
  *
