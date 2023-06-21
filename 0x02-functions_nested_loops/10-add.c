@@ -6,7 +6,7 @@
  * @a: first input
  * @b: second input
  *
- * Ruturn: sum of a and b
+ * Return: sum of a and b
 */
 
 int add(int a, int b)
