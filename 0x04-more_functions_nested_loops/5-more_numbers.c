@@ -1,8 +1,7 @@
 include "main.h"
 
 /**
- * more_numbers - print 0 - 14 ten times and can put three times
- *
+ * more_numbers - print 0 - 14 ten times
  * Return: 0 (Success)
 */
 
