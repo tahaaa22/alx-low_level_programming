@@ -10,12 +10,12 @@
 
 void print_triangle(int size)
 {
-	int h, b;
-
 	if (size <= 0)
 		_putchar('\n');
 	else
 	{
+		int h, b;
+
 		for (h = 1; h <= size; h++)
 		{
 			for (b = 1; base <= size; b++)
