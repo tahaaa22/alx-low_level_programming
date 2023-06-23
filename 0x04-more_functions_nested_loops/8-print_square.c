@@ -13,7 +13,6 @@ void print_square(int size)
 	if (size <= 0)
 	{
 		_putchar('\n');
-		return;
 	}
 
 	int row, col;
@@ -24,5 +23,4 @@ void print_square(int size)
 			_putchar('#');
 		_putchar('\n');
 	}
-	return;
 }
