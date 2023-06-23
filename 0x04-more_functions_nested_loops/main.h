@@ -5,4 +5,5 @@
 
 int _putchar(char c);
 void print_square(int size);
+void print_triangle(int size);
 #endif
