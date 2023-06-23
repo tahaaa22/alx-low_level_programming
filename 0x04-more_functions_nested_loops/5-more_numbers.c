@@ -2,7 +2,6 @@ include "main.h"
 
 /**
  * more_numbers - print 0 - 14 ten times
- * Return: 0 (Success)
 */
 
 void more_numbers(void)
@@ -16,10 +15,10 @@ void more_numbers(void)
 			n = c;
 			if (c > 9)
 			{
-				_putchar(1 + 48);
+				_putchar(1 + '0');
 				n = c % 10;
 			}
-			_putchar(n + 48);
+			_putchar(n + '0');
 		}
 		_putchar('\n');
 	}
