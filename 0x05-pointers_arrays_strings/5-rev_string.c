@@ -11,7 +11,7 @@ void rev_string(char *s)
 
 	while (s[i])
 		i++;
-	char hold[i + 1];
+	char hold[1000];
 
 	hold[i] = '\0';
 
