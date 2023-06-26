@@ -10,7 +10,7 @@ int _strlen(char *s)
 {
 	int c, counter = 0;
 
-	for (c = 0; *s != NULL; c++)
-		counter++;
+	for (c = 0; *s != '\0'; c++)
+		s++;
 	return (counter);
 }
