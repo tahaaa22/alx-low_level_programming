@@ -13,6 +13,6 @@ int main(void)
 
 	srand(time(NULL));
 	out = rand() % 9999;
-	_putchar(out);
+	putchar(out);
 	return (0);
 }
