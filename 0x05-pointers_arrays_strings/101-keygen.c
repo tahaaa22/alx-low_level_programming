@@ -10,9 +10,15 @@
 int main(void)
 {
 	int out;
+	char c;
 
 	srand(time(NULL));
-	out = rand() % 9999;
-	putchar(out);
+	while (sum <= 2645)
+	{
+		c = rand() % 120;
+		out += c;
+		putchar(c);
+	}
+	putchar(2772 - out);
 	return (0);
 }
