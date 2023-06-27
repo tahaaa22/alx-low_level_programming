@@ -11,23 +11,21 @@ int _atoi(char *s)
 	unsigned int result = 0;
 	int digit, sign = 1, i = 0;
 
-	while (s[i])
+	while (s[i] != '\0')
 	{
+		if (s[i] == '-')
+			sign *= -1;
 		if ((s[i] - '0') >= 0 && (s[i] - '0') <= 9)
 		{
-			if (s[i - 1] == '-')
-			{
-				sign = -1;
-			}
 			while ((s[i] - '0') >= 0 && (s[i] - '0') <= 9)
 			{
-				digit = *s - '0';
+				digit = s[i] - '0';
 				result = result * 10 + digit;
-				s++;
+				i++;
 			}
-			return (sign * result);
+			break;
 		}
-		s++;
+		i++;
 	}
-	return (0);
+	return (sign * result);
 }
