@@ -46,7 +46,7 @@ char *cap_string(char *s)
 			found = 1;
 		else if (isLower(*s) && found)
 		{
-			*s -= 12;
+			*s = *s - 'a' + 'A';
 			found = 0;
 		}
 		else
