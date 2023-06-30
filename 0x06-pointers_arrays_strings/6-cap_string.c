@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * isLower - wether ascii is lower case or not
  * @c: char
