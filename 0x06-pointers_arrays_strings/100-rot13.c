@@ -3,33 +3,29 @@
 
 /**
  * rot13 - function encodes a string using rot 13
- * @p: pointer to char
+ * @s: pointer to char
  * Return: pointer to char after encoding
 */
 
-char *rot13(char *p)
+char *rot13(char *s)
 {
-	int i = 0;
-	char c1;
-	char *s = p;
+	int i;
 
-	while (p[i] != '\0')
+	char rot13[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	char ROT13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char *ptr = s;
+
+	while (*s)
 	{
-		int j = 0;
-
-		while (p[j + i] >= 65 && p[i + j] <= 90 || p[i + j] >= 97 && p[i + j] <= 122)
+		for (i = 0; i <= 52; i++)
 		{
-			c1 = p[i + j] - 13;
-			if (p[i + j] >= 65 && p[i + j] <= 77 || p[i + j] >= 97 && p[i + j] <= 109)
+			if (*s == rot13[i])
 			{
-				p[i + j] = p[i + j] + 13;
-				j++;
-				continue;
+				*s = ROT13[i];
+				break;
 			}
-			p[i + j] = c1;
-			j++;
 		}
-		i = i + j + 1;
+		s++;
 	}
-	return (s);
+	return (ptr);
 }
