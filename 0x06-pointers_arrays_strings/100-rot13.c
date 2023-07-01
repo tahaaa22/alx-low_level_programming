@@ -2,7 +2,7 @@
 
 
 /**
- * rot13 - encodes a string using rot 13
+ * rot13 - function encodes a string using rot 13
  * @p: pointer to char
  * Return: pointer to char after encoding
 */
@@ -10,6 +10,7 @@
 char *rot13(char *p)
 {
 	int i = 0;
+	char c1;
 
 	while (p[i] != '\0')
 	{
@@ -17,10 +18,14 @@ char *rot13(char *p)
 
 		while (p[j + i] >= 65 && p[i + j] <= 90 || p[i + j] >= 97 && p[i + j] <= 122)
 		{
+			c1 = ptr[i + j] - 13;
 			if (p[i + j] >= 65 && p[i + j] <= 77 || p[i + j] >= 97 && p[i + j] <= 109)
+			{
 				p[i + j] = p[i + j] + 13;
-			else
-				p[i + j] = p[i + j] - 13;
+				j++;
+				continue;
+			}
+			ptr[i + j] = c1;
 			j++;
 		}
 		i = i + j + 1;
