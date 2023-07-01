@@ -25,7 +25,7 @@ char *rot13(char *p)
 				j++;
 				continue;
 			}
-			ptr[i + j] = c1;
+			p[i + j] = c1;
 			j++;
 		}
 		i = i + j + 1;
