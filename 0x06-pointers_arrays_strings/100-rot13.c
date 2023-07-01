@@ -18,7 +18,7 @@ char *rot13(char *p)
 
 		while (p[j + i] >= 65 && p[i + j] <= 90 || p[i + j] >= 97 && p[i + j] <= 122)
 		{
-			c1 = ptr[i + j] - 13;
+			c1 = p[i + j] - 13;
 			if (p[i + j] >= 65 && p[i + j] <= 77 || p[i + j] >= 97 && p[i + j] <= 109)
 			{
 				p[i + j] = p[i + j] + 13;
