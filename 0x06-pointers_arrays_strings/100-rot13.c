@@ -11,6 +11,7 @@ char *rot13(char *p)
 {
 	int i = 0;
 	char c1;
+	char *s = p;
 
 	while (p[i] != '\0')
 	{
@@ -30,5 +31,5 @@ char *rot13(char *p)
 		}
 		i = i + j + 1;
 	}
-	return (p);
+	return (s);
 }
