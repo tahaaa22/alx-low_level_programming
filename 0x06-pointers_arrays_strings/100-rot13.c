@@ -26,3 +26,4 @@ char *rot13(char *p)
 		i = i + j + 1;
 	}
 	return (p);
+}
