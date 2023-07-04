@@ -2,7 +2,7 @@
 
 
 /**
- * _strchr - function that locates a char in a string
+ * *_strchr - function that locates a char in a string
  * @s: string or null
  * @c: first occurrence of the char
  * Return: pointer to the first occurrence
