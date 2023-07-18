@@ -10,15 +10,16 @@
 int _strlen(const char *str)
 {
 	int length = 0;
+
 	while (*str++)
 		length++;
-	return(length);
+	return (length);
 }
 
 /**
  * _strcopy - a function that returns dest with a copy
  * @src: string to copy
- * @Dest: copy string here
+ * @dest: copy string here
  * Return: dest
 */
 
@@ -41,7 +42,7 @@ char *_strcopy(char *dest, char *src)
  * Return: struct pointer dog
 */
 
-dog_t *new_dog(char *name, float age, char * owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 
