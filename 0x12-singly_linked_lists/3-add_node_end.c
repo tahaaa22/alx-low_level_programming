@@ -9,7 +9,7 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	ist_t *new_node, *temp;
+	list_t *new_node, *temp;
 	unsigned int i = 0;
 
 	if (head == NULL)
