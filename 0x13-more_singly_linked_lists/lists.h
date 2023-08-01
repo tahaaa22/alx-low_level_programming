@@ -15,15 +15,6 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-/**
- * _putchar - func to print char
- * @c: char to print
- * Return: return num
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
