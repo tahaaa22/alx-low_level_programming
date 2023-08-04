@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * filp_bits - function that returns the number of bits flipped
+ * flip_bits - function that returns the number of bits flipped
  * @n: int to be flipped
  * @m: int to compare with
  * Return: number of how many flips
